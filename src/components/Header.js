@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Header.sass";
 import { FaTemperatureHigh } from "react-icons/fa";
 import { FiSunset, FiSunrise } from "react-icons/fi";
 
@@ -39,23 +40,25 @@ class Header extends Component {
     const { temperature, sunrise, sunset } = this.state;
 
     return (
-      <div className="header">
-        <h2>welcome in wroclaw</h2>
-        <aside className="cityInfo">
-          <p>
-            <FaTemperatureHigh />
-            {temperature}
-          </p>
-          <p>
-            <FiSunrise />
-            {sunrise}
-          </p>
-          <p>
-            <FiSunset />
-            {sunset}
-          </p>
-        </aside>
-      </div>
+      <header>
+        <div className="header">
+          <h2>welcome in wroclaw</h2>
+          <aside className="cityInfo">
+            <p>
+              <FaTemperatureHigh />
+              {temperature}
+            </p>
+            <p>
+              <FiSunrise />
+              {sunrise}
+            </p>
+            <p>
+              <FiSunset />
+              {sunset}
+            </p>
+          </aside>
+        </div>
+      </header>
     );
   }
 }
