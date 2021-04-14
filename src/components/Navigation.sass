@@ -1,0 +1,32 @@
+nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: black
+    height: 40px
+    z-index: 1
+    ul
+        display: flex
+        max-width: 900px
+        margin: 0 auto
+        list-style-type: none
+        li
+            width: 33%
+            text-align: center
+            a
+                display: block
+                line-height: 40px
+                color: white
+                text-decoration: none
+                text-transform: uppercase
+                font-weight: bold
+                transition: .3s
+            &:nth-child(2)
+                flex-grow: 1
+            a:hover
+                font-size: 18px
+            .active
+                font-size: 18px
+                background-color: grey
+                color: black
