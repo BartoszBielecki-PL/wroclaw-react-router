@@ -1,1 +1,37 @@
-
+.attractions
+    max-width: 1024px
+    margin: 0 auto
+    h2
+        text-align: center
+    ul
+        display: flex
+        flex-wrap: wrap
+        li
+            width: 50%
+            height: 25vh
+            list-style-type: none
+            a
+                position: relative
+                display: block
+                height: 100%
+                text-decoration: none
+                color: white
+                line-height: 25vh
+                text-align: center
+                font-size: 0
+                transition: 0.3s
+            a:hover
+                font-size: 1.5rem
+                font-weight: bold
+                img
+                    opacity: 1
+            img
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                z-index: -1
+                opacity: .8
+                object-fit: cover
+                transition: .3s

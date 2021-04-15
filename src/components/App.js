@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Attractions from "./Attractions";
+import AttractionPage from "./AttractionPage";
 
 class App extends Component {
   state = {};
@@ -17,6 +18,8 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/attractions" component={Attractions} />
+            <Route path="/:path" component={AttractionPage} />
+
             {/* <Route path="/contact" component={Contact} />
               <Route component={ErrorPage} /> */}
           </Switch>
