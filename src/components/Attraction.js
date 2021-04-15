@@ -1,4 +1,5 @@
 import React from "react";
+import "./Attraction.sass";
 
 const Attraction = (props) => {
   return (

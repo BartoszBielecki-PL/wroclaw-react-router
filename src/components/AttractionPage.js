@@ -1,5 +1,6 @@
 import React from "react";
 import Attraction from "./Attraction";
+import "./AttractionPage.sass";
 import { Link } from "react-router-dom";
 
 class AttractionPage extends React.Component {
@@ -19,11 +20,15 @@ class AttractionPage extends React.Component {
   render() {
     return (
       <main>
-        <Attraction
-          name={this.state.name}
-          description={this.state.description}
-        />
-        <Link to="/attractions">Back to Attractions</Link>
+        <div className="wrapAttraction">
+          <Attraction
+            name={this.state.name}
+            description={this.state.description}
+          />
+          <Link to="/attractions" className="back">
+            Back to Attractions
+          </Link>
+        </div>
       </main>
     );
   }
